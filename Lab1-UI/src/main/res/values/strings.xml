@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Labs20211-Gr07</string>
+    <string name="main_start_register">Iniciar Registro</string>
+    <string name="personal_data_personal_info">Información Personal</string>
+    <string name="personal_data_input_name">Nombre</string>
+    <string name="required">Requerido*</string>
 </resources>

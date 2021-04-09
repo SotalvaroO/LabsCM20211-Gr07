@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Labs20211-Gr07</string>
+    <string name="main_start_register">Start Register</string>
+    <string name="personal_data_personal_info">Personal Info</string>
+    <string name="personal_data_input_name">Name</string>
+    <string name="required">Requerido*</string>
+</resources>

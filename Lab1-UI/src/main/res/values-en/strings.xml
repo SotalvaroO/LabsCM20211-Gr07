@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Labs20211-Gr07</string>
-    <string name="main_start_register">Start Register</string>
-    <string name="personal_data_personal_info">Personal Info</string>
+
+    <string name="personal_data_personal_info">Personal Information</string>
     <string name="personal_data_input_name">Name</string>
     <string name="personal_data_input_last_name">Lastname</string>
     <string name="gender">Gender</string>
@@ -18,5 +18,12 @@
     <string name="undergraduate">Undergraduate</string>
     <string name="other_education">Others</string>
     <string name="next">Next</string>
+
+    <string name="contact_data_personal_info">Contact Information</string>
+    <string name="contact_data_input_telephone_number">Telephone Number</string>
+    <string name="contact_data_input_email">Email</string>
+    <string name="contact_data_autocomplete_country">Country</string>
+    <string name="contact_data_autocomplete_city">City</string>
+    <string name="contact_data_input_address">Adress</string>
 
 </resources>

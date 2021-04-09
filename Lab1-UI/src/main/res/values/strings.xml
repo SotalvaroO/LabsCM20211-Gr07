@@ -3,5 +3,20 @@
     <string name="main_start_register">Iniciar Registro</string>
     <string name="personal_data_personal_info">Información Personal</string>
     <string name="personal_data_input_name">Nombre</string>
+    <string name="personal_data_input_last_name">Apellido</string>
+    <string name="gender">Sexo</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="combat_chopper">Helicóptero de combate</string>
+    <string name="birthdate">Fecha de nacimiento</string>
+    <string name="change_date">Cambiar fecha</string>
+    <string name="schoolarship">Escolaridad</string>
     <string name="required">Requerido*</string>
+    <string name="elementary_school">Primaria</string>
+    <string name="basic_school">Bachillerato</string>
+    <string name="undergraduate">Universitario</string>
+    <string name="other_education">Otros</string>
+    <string name="next">Siguiente</string>
+
+
 </resources>

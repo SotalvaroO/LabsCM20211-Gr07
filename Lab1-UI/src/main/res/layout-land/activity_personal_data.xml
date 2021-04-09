@@ -19,79 +19,88 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <LinearLayout
+        android:id="@+id/linearLayoutHalf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="@dimen/margins"
-        android:hint="@string/personal_data_input_name"
-        app:boxCornerRadiusBottomEnd="@dimen/corners"
-        app:boxCornerRadiusBottomStart="@dimen/corners"
-        app:boxCornerRadiusTopEnd="@dimen/corners"
-        app:boxCornerRadiusTopStart="@dimen/corners"
-        app:counterEnabled="true"
-        app:counterMaxLength="25"
-        app:helperText="@string/required"
-        app:helperTextTextColor="@color/primary_app_color"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:startIconDrawable="@drawable/ic_person_24"
-        tools:layout_editor_absoluteX="16dp">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:gravity="top"
+        >
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight=".50"
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:maxLength="25"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:hint="@string/personal_data_input_name"
+            app:boxCornerRadiusBottomEnd="@dimen/corners"
+            app:boxCornerRadiusBottomStart="@dimen/corners"
+            app:boxCornerRadiusTopEnd="@dimen/corners"
+            app:boxCornerRadiusTopStart="@dimen/corners"
+            app:counterEnabled="true"
+            app:counterMaxLength="25"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/primary_app_color"
+            app:startIconDrawable="@drawable/ic_person_24"
+            tools:layout_editor_absoluteX="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayoutTwo"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="@dimen/margins"
-        android:hint="@string/personal_data_input_last_name"
-        app:boxCornerRadiusBottomEnd="@dimen/corners"
-        app:boxCornerRadiusBottomStart="@dimen/corners"
-        app:boxCornerRadiusTopEnd="@dimen/corners"
-        app:boxCornerRadiusTopStart="@dimen/corners"
-        app:counterEnabled="true"
-        app:counterMaxLength="30"
-        app:helperText="@string/required"
-        app:helperTextTextColor="@color/primary_app_color"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:startIconDrawable="@drawable/ic_person_24">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight=".50"
+            android:id="@+id/textInputLayoutTwo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            android:maxLength="30"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:layout_editor_absoluteX="16dp" />
+            android:layout_marginLeft="@dimen/margins"
+            android:layout_marginRight="@dimen/margins"
+            android:hint="@string/personal_data_input_last_name"
+            app:boxCornerRadiusBottomEnd="@dimen/corners"
+            app:boxCornerRadiusBottomStart="@dimen/corners"
+            app:boxCornerRadiusTopEnd="@dimen/corners"
+            app:boxCornerRadiusTopStart="@dimen/corners"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:helperText="@string/required"
+            app:helperTextTextColor="@color/primary_app_color"
+            app:startIconDrawable="@drawable/ic_person_24">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="@dimen/margins"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTwo">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutHalf">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -137,9 +146,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="32dp"
         android:layout_marginRight="@dimen/margins"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <ImageView
@@ -167,7 +176,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/margins"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="12dp"
         android:layout_marginRight="@dimen/margins"
         android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutTwo">
@@ -193,7 +202,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginRight="@dimen/margins"
         android:text="@string/next"/>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

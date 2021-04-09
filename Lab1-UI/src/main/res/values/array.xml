@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="schoolarship">
+
+        <item>@string/schoolarship</item>
+        <item>@string/elementary_school</item>
+        <item>@string/basic_school</item>
+        <item>@string/undergraduate</item>
+        <item>@string/other_education</item>
+
+
+    </string-array>
+</resources>

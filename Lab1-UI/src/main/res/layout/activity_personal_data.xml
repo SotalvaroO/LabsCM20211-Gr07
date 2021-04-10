@@ -42,6 +42,7 @@
         tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditTextt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -73,6 +74,7 @@
         app:startIconDrawable="@drawable/ic_person_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lastNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -106,24 +108,28 @@
             android:text="@string/gender" />
 
         <RadioGroup
+            android:id="@+id/genderRadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/maleRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/primary_app_color"
                 android:text="@string/male" />
 
             <RadioButton
+                android:id="@+id/femaleRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/primary_app_color"
                 android:text="@string/female" />
 
             <RadioButton
+                android:id="@+id/combatChopperRadioButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/primary_app_color"
@@ -155,11 +161,24 @@
             android:layout_marginRight="15dp"
             android:text="@string/birthdate" />
 
-        <Button
-            android:id="@+id/datePickerButton"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/change_date" />
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_date" />
+
+            <TextView
+                android:id="@+id/selectedDateTextView"
+                android:layout_width="wrap_content"
+                android:text="fecha"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 

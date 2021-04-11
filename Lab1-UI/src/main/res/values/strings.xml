@@ -11,8 +11,8 @@
     <string name="combat_chopper">Helicóptero de combate</string>
     <string name="birthdate">Fecha de nacimiento</string>
     <string name="change_date">Cambiar fecha</string>
-    <string name="schoolarship">Escolaridad</string>
     <string name="required">Requerido*</string>
+    <string name="schoolarship">Escolaridad</string>
     <string name="elementary_school">Primaria</string>
     <string name="basic_school">Bachillerato</string>
     <string name="undergraduate">Universitario</string>

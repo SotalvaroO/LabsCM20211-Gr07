@@ -1,5 +1,7 @@
 package co.edu.udea.compumovil.gr07_20211.lab1;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,27 +11,36 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
+import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
-public class PersonalDataActivity extends AppCompatActivity {
+public class PersonalDataActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     Button btnSiguiente;
     Button btnSelectDate;
-    DatePickerDialog datePickerDialog;
 
     TextView dateTextView;
     TextInputEditText nameEditText;
     TextInputEditText lastNameEditText;
     RadioGroup genderRadioGroup;
+    Spinner schoolarshipSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +53,61 @@ public class PersonalDataActivity extends AppCompatActivity {
         btnSiguiente = findViewById(R.id.btnSiguiente);
         btnSelectDate = findViewById(R.id.datePickerButton);
         dateTextView = findViewById(R.id.selectedDateTextView);
+        schoolarshipSpinner = findViewById(R.id.spinnerSchoolarship);
+
+        List<String> categories = new ArrayList<>();
+        categories.add(0, getResources().getString(R.string.schoolarship) );
+        categories.add( getResources().getString(R.string.elementary_school));
+        categories.add( getResources().getString(R.string.basic_school));
+        categories.add( getResources().getString(R.string.undergraduate));
+        categories.add( getResources().getString(R.string.other_education));
+
+        ArrayAdapter<String> dataAdapter;
+        dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories){
+            @Override
+            public boolean isEnabled(int position) {
+                if (position == 0){
+                    return false;
+                }else{
+                    return true;
+                }
+
+            }
+
+            @Override
+            public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+                View view = super.getDropDownView(position, convertView, parent);
+                TextView tv = (TextView) view;
+                if (position == 0) {
+                    // Set the hint text color gray
+                    tv.setTextColor(Color.GRAY);
+                } else {
+                    tv.setTextColor(Color.BLACK);
+                }
+                return view;
+            }
+        };
+
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        schoolarshipSpinner.setAdapter(dataAdapter);
+
+        schoolarshipSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if (parent.getItemAtPosition(position).equals(getResources().getString(R.string.schoolarship))){
+
+                }else {
+                    String item = parent.getItemAtPosition(position).toString();
+                    Toast.makeText(PersonalDataActivity.this, item, Toast.LENGTH_SHORT).show();
+                }
+            }
+
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         btnSelectDate.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.N)
@@ -60,21 +126,20 @@ public class PersonalDataActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.YEAR, year);
+        c.set(Calendar.MONTH, month);
+        c.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+        String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
+        dateTextView.setText(currentDateString);
+
+    }
 
     public void createDatePicker(View view) {
-        Calendar calendar = Calendar.getInstance();
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH);
-        int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-
-        datePickerDialog = new DatePickerDialog(PersonalDataActivity.this,
-                new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker view, int year, int month, int day) {
-                        dateTextView.setText(day + "/" + month + "/" + year);
-                    }
-                }, 1, 1, 1);
-        datePickerDialog.show();
+        DialogFragment datePicker = new DialogFragment();
+        datePicker.show(getSupportFragmentManager(), "date picker");
     }
 
     public String getGender(View view) {

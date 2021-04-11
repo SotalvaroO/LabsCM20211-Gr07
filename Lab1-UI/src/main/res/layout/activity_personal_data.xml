@@ -199,9 +199,9 @@
             android:src="@drawable/ic_school_24" />
 
         <Spinner
+            android:id="@+id/spinnerSchoolarship"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/schoolarship"
             />
 
     </LinearLayout>

@@ -165,7 +165,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         if (genderRadioGroup.getCheckedRadioButtonId() == R.id.femaleRadioButton) {
             return "Female";
         }
-        if (genderRadioGroup.getCheckedRadioButtonId() == R.id.maleRadioButton) {
+        if (genderRadioGroup.getCheckedRadioButtonId() == R.id.combatChopperRadioButton) {
             return "Combat Chopper";
         }
         return "Non selected";
@@ -178,7 +178,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         String birthdate = dateTextView.getText().toString();
         String schoolarship = schoolarshipSpinner.getSelectedItem().toString();
         Intent startActivity = new Intent(PersonalDataActivity.this, ContactDataActivity.class);
-        //Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n " + schoolarship);
+        Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n "+ age + "\n " + schoolarship);
         if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty() && age >= 18 && !schoolarship.equals(getResources().getString(R.string.schoolarship))){
             startActivity(startActivity);
         }else {

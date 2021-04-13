@@ -47,7 +47,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_data);
 
-        nameEditText = findViewById(R.id.nameEditTextt);
+        nameEditText = findViewById(R.id.nameEditText);
         lastNameEditText = findViewById(R.id.lastNameEditText);
         genderRadioGroup = findViewById(R.id.genderRadioGroup);
         btnSiguiente = findViewById(R.id.btnSiguiente);
@@ -142,7 +142,8 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         datePicker.show(getSupportFragmentManager(), "date picker");
     }
 
-    public String getGender(View view) {
+    public String getGender() {
+
         if (genderRadioGroup.getCheckedRadioButtonId() == R.id.maleRadioButton) {
             return "Male";
         }
@@ -156,7 +157,13 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
     }
 
     private void contactDataActivity() {
+        String name = nameEditText.getText().toString();
+        String lastName = lastNameEditText.getText().toString();
+        String gender = getGender();
+        String birthdate = dateTextView.getText().toString();
+        String schoolarship = schoolarshipSpinner.getSelectedItem().toString();
         Intent startActivity = new Intent(PersonalDataActivity.this, ContactDataActivity.class);
+        //Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n " + schoolarship);
         startActivity(startActivity);
     }
 }

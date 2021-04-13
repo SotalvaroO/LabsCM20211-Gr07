@@ -41,6 +41,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
     TextInputEditText lastNameEditText;
     RadioGroup genderRadioGroup;
     Spinner schoolarshipSpinner;
+    int age = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +133,20 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         c.set(Calendar.YEAR, year);
         c.set(Calendar.MONTH, month);
         c.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+        Calendar currentDate = Calendar.getInstance();
+        int currentYear = currentDate.get(Calendar.YEAR);
+        int currentMonth = currentDate.get(Calendar.MONTH);
+        int currentDay = currentDate.get(Calendar.DAY_OF_MONTH);
+        age = (int) currentYear - year - 1;
+
+        if (currentMonth == month ){
+            if (currentDay >= dayOfMonth) {
+                age = age + 1;
+            }
+        }
+        else if (currentMonth > month){
+            age = age + 1;
+        }
         String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
         dateTextView.setText(currentDateString);
 
@@ -164,6 +179,11 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         String schoolarship = schoolarshipSpinner.getSelectedItem().toString();
         Intent startActivity = new Intent(PersonalDataActivity.this, ContactDataActivity.class);
         //Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n " + schoolarship);
-        startActivity(startActivity);
+        if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty() && age >= 18 && !schoolarship.equals(getResources().getString(R.string.schoolarship))){
+            startActivity(startActivity);
+        }else {
+            Toast.makeText(this, "Ingrese válidamente los datos", Toast.LENGTH_SHORT).show();
+        }
+        
     }
 }

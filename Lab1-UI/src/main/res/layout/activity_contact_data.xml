@@ -168,13 +168,37 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive"
+        android:layout_marginLeft="@dimen/margins"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="@dimen/margins"
-        android:text="@string/next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/buttonReturn"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="64dp"
+            android:text="@string/goBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
+
+    </LinearLayout>
 
 
 

@@ -19,6 +19,7 @@
     <string name="undergraduate">Undergraduate</string>
     <string name="other_education">Others</string>
     <string name="next">Next</string>
+    <string name="goBack">Go back</string>
 
     <string name="contact_data_personal_info">Contact Information</string>
     <string name="contact_data_input_telephone_number">Telephone Number</string>

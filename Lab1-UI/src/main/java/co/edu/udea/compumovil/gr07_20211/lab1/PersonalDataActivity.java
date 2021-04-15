@@ -11,6 +11,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -55,6 +57,26 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         btnSelectDate = findViewById(R.id.datePickerButton);
         dateTextView = findViewById(R.id.selectedDateTextView);
         schoolarshipSpinner = findViewById(R.id.spinnerSchoolarship);
+
+        String nombre= nameEditText.getText().toString();
+        Log.d("nombre", "hola" + nombre);
+        nameEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String nombre= nameEditText.getText().toString();
+                Log.d("nombre", "hola" + nombre);
+            }
+        });
 
         List<String> categories = new ArrayList<>();
         categories.add(0, getResources().getString(R.string.schoolarship) );

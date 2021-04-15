@@ -3,6 +3,7 @@ package co.edu.udea.compumovil.gr07_20211.lab1;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,6 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.Calendar;
 
 public class DialogFragment extends androidx.fragment.app.DialogFragment {
+
 
     @NonNull
     @Override

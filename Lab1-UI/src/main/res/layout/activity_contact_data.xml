@@ -42,6 +42,7 @@
         tools:layout_editor_absoluteX="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_Telefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -73,6 +74,7 @@
         app:startIconDrawable="@drawable/ic_email_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -104,7 +106,7 @@
         app:startIconDrawable="@drawable/ic_country_24">
 
         <com.google.android.material.textfield.MaterialAutoCompleteTextView
-            android:id="@+id/acPais"
+            android:id="@+id/autoComplete_Pais"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -128,6 +130,7 @@
         app:startIconDrawable="@drawable/ic_city_24">
 
         <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/autoComplete_Ciudad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -157,6 +160,7 @@
         app:startIconDrawable="@drawable/ic_address_24">
 
         <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/editText_Ciudad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
@@ -179,7 +183,7 @@
         android:gravity="center|bottom">
 
         <Button
-            android:id="@+id/buttonReturn"
+            android:id="@+id/button_Return"
             android:layout_gravity="left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -189,7 +193,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
 
         <Button
-            android:id="@+id/buttonNext"
+            android:id="@+id/button_Next"
             android:layout_gravity="right"
             android:layout_width="wrap_content"
             android:layout_marginLeft="64dp"

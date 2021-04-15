@@ -58,7 +58,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         dateTextView = findViewById(R.id.selectedDateTextView);
         schoolarshipSpinner = findViewById(R.id.spinnerSchoolarship);
 
-        String nombre= nameEditText.getText().toString();
+        String nombre = nameEditText.getText().toString();
         Log.d("nombre", "hola" + nombre);
         nameEditText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -73,25 +73,25 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
 
             @Override
             public void afterTextChanged(Editable s) {
-                String nombre= nameEditText.getText().toString();
+                String nombre = nameEditText.getText().toString();
                 Log.d("nombre", "hola" + nombre);
             }
         });
 
         List<String> categories = new ArrayList<>();
-        categories.add(0, getResources().getString(R.string.schoolarship) );
-        categories.add( getResources().getString(R.string.elementary_school));
-        categories.add( getResources().getString(R.string.basic_school));
-        categories.add( getResources().getString(R.string.undergraduate));
-        categories.add( getResources().getString(R.string.other_education));
+        categories.add(0, getResources().getString(R.string.schoolarship));
+        categories.add(getResources().getString(R.string.elementary_school));
+        categories.add(getResources().getString(R.string.basic_school));
+        categories.add(getResources().getString(R.string.undergraduate));
+        categories.add(getResources().getString(R.string.other_education));
 
         ArrayAdapter<String> dataAdapter;
-        dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories){
+        dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories) {
             @Override
             public boolean isEnabled(int position) {
-                if (position == 0){
+                if (position == 0) {
                     return false;
-                }else{
+                } else {
                     return true;
                 }
 
@@ -117,9 +117,9 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         schoolarshipSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (parent.getItemAtPosition(position).equals(getResources().getString(R.string.schoolarship))){
+                if (parent.getItemAtPosition(position).equals(getResources().getString(R.string.schoolarship))) {
 
-                }else {
+                } else {
                     String item = parent.getItemAtPosition(position).toString();
                     Toast.makeText(PersonalDataActivity.this, item, Toast.LENGTH_SHORT).show();
                 }
@@ -161,12 +161,11 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         int currentDay = currentDate.get(Calendar.DAY_OF_MONTH);
         age = (int) currentYear - year - 1;
 
-        if (currentMonth == month ){
+        if (currentMonth == month) {
             if (currentDay >= dayOfMonth) {
                 age = age + 1;
             }
-        }
-        else if (currentMonth > month){
+        } else if (currentMonth > month) {
             age = age + 1;
         }
         String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
@@ -203,10 +202,25 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         String schoolarship = schoolarshipSpinner.getSelectedItem().toString();
         Intent startActivity = new Intent(PersonalDataActivity.this, ContactDataActivity.class);
 
-        Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n "+ age + "\n " + schoolarship);
-        if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty() && age >= 18 && !schoolarship.equals(getResources().getString(R.string.schoolarship))){
-            startActivity(startActivity);
-        }else {
+
+        if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty()) {
+            if (age < 10) {
+                Toast.makeText(this, "Usted debe ser mayor de 10 años", Toast.LENGTH_SHORT).show();
+            } else {
+                Log.d("fff", "\n");
+                Log.d("fff", name + " " + lastName + "\n");
+                Log.d("fff", gender + "\n");
+                Log.d("fff", "Nació el " + birthdate + "\n");
+                Log.d("fff", "Nació el " + birthdate + "\n");
+                if (schoolarship.equals(getResources().getString(R.string.schoolarship))) {
+                    Log.d("fff", "No elige escolaridad" + "\n");
+                } else {
+                    Log.d("fff", schoolarship + "\n");
+                }
+                startActivity(startActivity);
+            }
+
+        } else {
             Toast.makeText(this, "Ingrese válidamente los datos", Toast.LENGTH_SHORT).show();
         }
     }

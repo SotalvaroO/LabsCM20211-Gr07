@@ -1,4 +1,4 @@
-    package co.edu.udea.compumovil.gr07_20211.lab1;
+package co.edu.udea.compumovil.gr07_20211.lab1;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -51,7 +51,7 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         nameEditText = findViewById(R.id.nameEditText);
         lastNameEditText = findViewById(R.id.lastNameEditText);
         genderRadioGroup = findViewById(R.id.genderRadioGroup);
-        btnSiguiente = findViewById(R.id.btnSiguiente);
+        btnSiguiente = findViewById(R.id.nextButton);
         btnSelectDate = findViewById(R.id.datePickerButton);
         dateTextView = findViewById(R.id.selectedDateTextView);
         schoolarshipSpinner = findViewById(R.id.spinnerSchoolarship);
@@ -171,19 +171,21 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
         return "Non selected";
     }
 
+
     private void contactDataActivity() {
+
         String name = nameEditText.getText().toString();
         String lastName = lastNameEditText.getText().toString();
         String gender = getGender();
         String birthdate = dateTextView.getText().toString();
         String schoolarship = schoolarshipSpinner.getSelectedItem().toString();
         Intent startActivity = new Intent(PersonalDataActivity.this, ContactDataActivity.class);
+
         Log.d("Datos", "\n "+name + "\n " + lastName + "\n " + gender + "\n "+ birthdate + "\n "+ age + "\n " + schoolarship);
         if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty() && age >= 18 && !schoolarship.equals(getResources().getString(R.string.schoolarship))){
             startActivity(startActivity);
         }else {
             Toast.makeText(this, "Ingrese válidamente los datos", Toast.LENGTH_SHORT).show();
         }
-        
     }
 }

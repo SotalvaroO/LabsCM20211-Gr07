@@ -54,8 +54,7 @@
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
-                android:maxLength="25"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                android:maxLength="25" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -86,7 +85,6 @@
                 android:importantForAutofill="no"
                 android:inputType="textPersonName"
                 android:maxLength="30"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="16dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -214,7 +212,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSiguiente"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/margins"

@@ -204,18 +204,23 @@ public class PersonalDataActivity extends AppCompatActivity implements DatePicke
 
 
         if (!name.isEmpty() && !lastName.isEmpty() && !gender.isEmpty()) {
-            if (age < 10) {
-                Toast.makeText(this, "Usted debe ser mayor de 10 años", Toast.LENGTH_SHORT).show();
+            if (age < 1) {
+                Toast.makeText(this, "Usted debe ser mayor de 1 año", Toast.LENGTH_SHORT).show();
             } else {
-                Log.d("fff", "\n");
-                Log.d("fff", name + " " + lastName + "\n");
-                Log.d("fff", gender + "\n");
-                Log.d("fff", "Nació el " + birthdate + "\n");
-                Log.d("fff", "Nació el " + birthdate + "\n");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "==========================================");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "Información perosnal");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "==========================================");
+                Log.d("informacion", "\n");
+                Log.d("informacion", name + " " + lastName + "\n");
+                Log.d("informacion", gender + "\n");
+                Log.d("informacion", "Nació el " + birthdate + "\n");
                 if (schoolarship.equals(getResources().getString(R.string.schoolarship))) {
-                    Log.d("fff", "No elige escolaridad" + "\n");
+                    Log.d("informacion", "No elige escolaridad" + "\n");
                 } else {
-                    Log.d("fff", schoolarship + "\n");
+                    Log.d("informacion", schoolarship + "\n");
                 }
                 startActivity(startActivity);
             }

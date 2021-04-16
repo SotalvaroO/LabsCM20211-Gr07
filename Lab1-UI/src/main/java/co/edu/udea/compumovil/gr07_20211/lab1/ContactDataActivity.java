@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import java.util.function.IntToDoubleFunction;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ContactDataActivity extends AppCompatActivity {
 
@@ -28,7 +33,7 @@ public class ContactDataActivity extends AppCompatActivity {
 
         txtTelefono = findViewById(R.id.editText_Telefono);
         txtCorreo = findViewById(R.id.editText_Email);
-        txtDireccion = findViewById(R.id.editText_Ciudad);
+        txtDireccion = findViewById(R.id.editText_Address);
 
 
         ArrayAdapter<String> adapterPais = new ArrayAdapter<String>(this,
@@ -48,16 +53,16 @@ public class ContactDataActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (acPais.getText().toString().toLowerCase().equals("colombia")) {
-                    acCiudad.setAdapter(adapterCiudad);
-                } else {
-                    acCiudad.setAdapter(null);
-                }
 
             }
 
             @Override
             public void afterTextChanged(Editable s) {
+                if (acPais.getText().toString().toLowerCase().equals("colombia")) {
+                    acCiudad.setAdapter(adapterCiudad);
+                } else {
+                    acCiudad.setAdapter(null);
+                }
 
             }
         });
@@ -101,12 +106,47 @@ public class ContactDataActivity extends AppCompatActivity {
         String telefono = txtTelefono.getText().toString();
         String correo = txtCorreo.getText().toString();
         String direccion = txtDireccion.getText().toString();
-
-        if (!telefono.isEmpty() && !correo.isEmpty() && !direccion.isEmpty()) {
-            Toast.makeText(this, "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
+        String pais = acPais.getText().toString();
+        String ciudad = acCiudad.getText().toString();
+        boolean isEmailValid = isEmailValid(correo);
+        Intent endActivity = new Intent(ContactDataActivity.this, EndActivity.class);
+        if (!telefono.isEmpty() && !correo.isEmpty()) {
+            if (!isEmailValid){
+                Toast.makeText(this, "Email ingresado no es correcto", Toast.LENGTH_SHORT).show();
+            }else {
+                Log.d("informacion", "\n");
+                Log.d("informacion", "==========================================");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "Información del contacto");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "==========================================");
+                Log.d("informacion", "\n");
+                Log.d("informacion", "Teléfono de contacto: " + telefono + "\n");
+                if (direccion.isEmpty()){
+                    Log.d("informacion", "No ingresa direccion " +  "\n");
+                }else {
+                    Log.d("informacion", "Direccion: " + direccion + "\n");
+                }
+                Log.d("informacion", "Email: " + correo + "\n");
+                Log.d("informacion", "Pais: " + pais + "\n");
+                if (ciudad.isEmpty()) {
+                    Log.d("informacion", "No elige Ciudad" + "\n");
+                } else {
+                    Log.d("informacion", "Ciudad: " + ciudad + "\n");
+                }
+                startActivity(endActivity);
+                Toast.makeText(this, "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
+            }
         } else {
             Toast.makeText(this, "Ingrese válidamente los datos", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean isEmailValid(String email) {
+        String expression = "^[\\w\\.-]+@([\\w\\-]+\\.)+[A-Z]{2,4}$";
+        Pattern pattern = Pattern.compile(expression, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
     }
 
 }

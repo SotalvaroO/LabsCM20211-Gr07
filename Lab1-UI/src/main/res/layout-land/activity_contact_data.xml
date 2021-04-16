@@ -19,21 +19,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <LinearLayout
         android:id="@+id/firstLinearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight=".5"
             android:id="@+id/textInputLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margins"
             android:layout_marginRight="@dimen/margins"
-            android:layout_weight=".5"
             android:hint="@string/contact_data_input_telephone_number"
             app:boxCornerRadiusBottomEnd="@dimen/corners"
             app:boxCornerRadiusBottomStart="@dimen/corners"
@@ -43,27 +43,28 @@
             app:counterMaxLength="25"
             app:helperText="@string/required"
             app:helperTextTextColor="@color/primary_app_color"
-            app:startIconDrawable="@drawable/ic_call_24">
+            app:startIconDrawable="@drawable/ic_call_24"
+            tools:layout_editor_absoluteX="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_Telefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
                 android:inputType="number"
-                android:maxLength="25"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                android:maxLength="25" />
 
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:layout_weight=".5"
             android:id="@+id/textInputLayoutTwo"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/margins"
             android:layout_marginRight="@dimen/margins"
-            android:layout_weight=".5"
             android:hint="@string/contact_data_input_email"
             app:boxCornerRadiusBottomEnd="@dimen/corners"
             app:boxCornerRadiusBottomStart="@dimen/corners"
@@ -73,16 +74,15 @@
             app:counterMaxLength="30"
             app:helperText="@string/required"
             app:helperTextTextColor="@color/primary_app_color"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
             app:startIconDrawable="@drawable/ic_email_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText_Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:maxLength="30"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="16dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -114,17 +114,15 @@
             app:counterMaxLength="20"
             app:helperText="@string/required"
             app:helperTextTextColor="@color/primary_app_color"
-            app:layout_constraintTop_toBottomOf="@+id/firstLinearLayout"
             app:startIconDrawable="@drawable/ic_country_24">
 
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
-                android:id="@+id/acPais"
+                android:id="@+id/autoComplete_Pais"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:maxLength="30"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="16dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -139,22 +137,21 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="@dimen/margins"
             android:hint="@string/contact_data_autocomplete_city"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutThree"
+
             app:startIconDrawable="@drawable/ic_city_24">
 
             <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/autoComplete_Ciudad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAutofill="no"
                 android:inputType="textEmailAddress"
                 android:maxLength="30"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:layout_editor_absoluteX="16dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
-
 
 
 
@@ -177,12 +174,12 @@
         app:startIconDrawable="@drawable/ic_address_24">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_Address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:maxLength="30"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:layout_editor_absoluteX="16dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -191,34 +188,35 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive"
         android:layout_marginLeft="@dimen/margins"
         android:layout_marginTop="10dp"
         android:layout_marginRight="@dimen/margins"
-        android:gravity="center|bottom"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive">
+        android:gravity="center|bottom">
 
         <Button
-            android:id="@+id/buttonReturn"
+            android:id="@+id/button_Return"
+            android:layout_gravity="left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
             android:layout_marginRight="64dp"
             android:text="@string/goBack"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
 
         <Button
-            android:id="@+id/buttonNext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/button_Next"
             android:layout_gravity="right"
+            android:layout_width="wrap_content"
             android:layout_marginLeft="64dp"
+            android:layout_height="wrap_content"
             android:text="@string/next"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFive" />
 
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

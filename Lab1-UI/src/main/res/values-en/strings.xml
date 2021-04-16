@@ -28,4 +28,6 @@
     <string name="contact_data_autocomplete_city">City</string>
     <string name="contact_data_input_address">Adress</string>
 
+    <string name="end">You have been completed the register!!</string>
+
 </resources>

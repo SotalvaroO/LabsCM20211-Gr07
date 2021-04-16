@@ -113,7 +113,8 @@
             android:inputType="textEmailAddress"
             android:maxLength="30"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:layout_editor_absoluteX="16dp" />
+            tools:layout_editor_absoluteX="16dp"
+            android:nextFocusForward="@id/autoComplete_Ciudad"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -137,6 +138,7 @@
             android:inputType="textEmailAddress"
             android:maxLength="30"
             app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:nextFocusDown="@id/editText_Address"
             tools:layout_editor_absoluteX="16dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -160,7 +162,7 @@
         app:startIconDrawable="@drawable/ic_address_24">
 
         <com.google.android.material.textfield.TextInputEditText
-           android:id="@+id/editText_Ciudad"
+            android:id="@+id/editText_Address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:importantForAutofill="no"

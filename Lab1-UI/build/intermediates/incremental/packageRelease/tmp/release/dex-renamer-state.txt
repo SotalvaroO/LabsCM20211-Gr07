@@ -1,0 +1,4 @@
+#Sun Apr 18 15:42:18 COT 2021
+base.0=G\:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

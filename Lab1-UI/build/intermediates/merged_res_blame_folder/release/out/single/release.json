@@ -1,0 +1,166 @@
+[
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-hdpi_logo_app.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable-hdpi\\logo_app.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\generated\\res\\pngs\\release\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_email_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_email_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_school_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_school_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout_activity_end.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout\\activity_end.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout_activity_main.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout_activity_personal_data.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout\\activity_personal_data.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_gender_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_gender_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_date_range_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_date_range_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_address_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_address_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_person_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_person_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-xxhdpi_logo_app.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable-xxhdpi\\logo_app.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_city_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_city_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_splash_background.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\splash_background.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout-land_activity_personal_data.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout-land\\activity_personal_data.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout_activity_contact_data.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout\\activity_contact_data.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_country_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_country_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_person_24_primary_color.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_person_24_primary_color.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\layout-land_activity_contact_data.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\layout-land\\activity_contact_data.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_call_24.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_call_24.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-xxxhdpi_logo_app.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable-xxxhdpi\\logo_app.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_logo_app.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable-xhdpi\\logo_app.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable_ic_launcher_background.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_logo_app.png.flat",
+        "source": "G:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\src\\main\\res\\drawable-mdpi\\logo_app.png"
+    }
+]

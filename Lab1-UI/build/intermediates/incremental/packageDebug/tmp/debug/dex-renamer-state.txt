@@ -1,0 +1,7 @@
+#Sun Apr 18 15:32:27 COT 2021
+base.0=G\:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=G\:\\Programacion\\GItHub Desktop\\LabsCM20211-Gr07\\Lab1-UI\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex

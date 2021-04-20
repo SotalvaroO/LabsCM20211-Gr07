@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Labs20211-Gr07</string>
+    <string name="main_start_register">Iniciar Registro</string>
+
+    <string name="personal_data_personal_info">Informacion Personal</string>
+    <string name="personal_data_input_name">Nombre</string>
+    <string name="personal_data_input_last_name">Apellido</string>
+    <string name="gender">Sexo</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="combat_chopper">Helicóptero de combate</string>
+    <string name="birthdate">Fecha de nacimiento</string>
+    <string name="change_date">Cambiar fecha</string>
+    <string name="required">Requerido*</string>
+    <string name="schoolarship">Escolaridad</string>
+    <string name="elementary_school">Primaria</string>
+    <string name="basic_school">Bachillerato</string>
+    <string name="undergraduate">Universitario</string>
+    <string name="other_education">Otros</string>
+    <string name="next">Siguiente</string>
+    <string name="goBack">Anterior</string>
+
+    <string name="contact_data_personal_info">Informacion de Contacto</string>
+    <string name="contact_data_input_telephone_number">Telefono</string>
+    <string name="contact_data_input_email">Correo Electronico</string>
+    <string name="contact_data_autocomplete_country">Pais</string>
+    <string name="contact_data_autocomplete_city">Ciudad</string>
+    <string name="contact_data_input_address">Direccion</string>
+
+    <string name="end">Has completado el registro exitósamente!!</string>
+
+</resources>

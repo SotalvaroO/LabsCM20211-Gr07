@@ -1,2 +1,2 @@
-include ':app'
+include ':Lab1-UI'
 rootProject.name = "Labs20211-Gr07"
